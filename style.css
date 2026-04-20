@@ -58,6 +58,9 @@ button {
 
 .content {
   background-color: #202027;
+  background-image: url(img/Star1Con.png), url(img/Star2Con.png), url(img/Star3Con.png), url(img/Star4Con.png), url(img/Star5Con.png), url(img/Star6Con.png), url(img/Star7Con.png);
+  background-repeat: no-repeat;
+  background-position: top 77px right 0px, left 25px top 770px, left 40px top 822px, right 124px top 1563px, right 45px top 1596px, right 65px top 4836px, right 150px top 4884px;
 }
 
 .cart__title {
