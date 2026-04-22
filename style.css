@@ -47,7 +47,8 @@ button {
   padding: 16px 65px 16px 65px;
   border: none;
   text-decoration: none;
-  width: 247px;
+  width: 20%;
+  text-align: center;
 }
 .hero__buttom:hover {
   border: 1px solid #202027;
@@ -134,7 +135,7 @@ button {
   background-color: white;
   border-radius: 45px;
   justify-content: space-between;
-  height: 500px;
+  min-height: 500px;
 }
 .game__cart_left {
   display: flex;
@@ -172,7 +173,7 @@ button {
 }
 
 .footer {
-  height: 150px;
+  min-height: 150px;
   background-color: #BDED35;
   display: flex;
   justify-content: center;
@@ -181,4 +182,71 @@ button {
 .footer__text {
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .content {
+    background-image: none;
+  }
+  .hero {
+    background-image: none;
+    background-image: url(img/StarMB.png), url(img/StarM1.png), url(img/StarM2.png), url(img/StarM3.png), url(img/StarM4.png);
+    background-repeat: no-repeat;
+    background-position: top 0px right 0px, left 91px top 64px, left 37px top 97px, right 86px top 557px, right 34px top 580px;
+  }
+  .hero__title {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 147px;
+  }
+  .hero__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero__buttom {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+  .hero__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cart {
+    display: none;
+  }
+  .game__title {
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 48px;
+  }
+  .game__cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .game__cart-box {
+    padding-bottom: 10px;
+    padding-top: 48px;
+  }
+  .game__content-name {
+    font-size: 32px;
+  }
+  .game__content-text {
+    font-size: 16px;
+  }
+  .game__content-buttom {
+    font-size: 16px;
+  }
+  .footer {
+    min-height: 100px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

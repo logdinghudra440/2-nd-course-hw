@@ -14,8 +14,6 @@ button {
     font-family: 'Montserrat', arial;
 }
 
-html {}
-
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -58,7 +56,9 @@ html {}
         padding: 16px 65px 16px 65px;
         border: none;
         text-decoration: none;
-        width: 247px;
+        width: 20%;
+        ;
+        text-align: center;
     }
 
     &__buttom:hover {
@@ -75,12 +75,12 @@ html {}
     background-image: url(img/Star1Con.png), url(img/Star2Con.png), url(img/Star3Con.png), url(img/Star4Con.png), url(img/Star5Con.png), url(img/Star6Con.png), url(img/Star7Con.png);
     background-repeat: no-repeat;
     background-position: top 77px right 0px,
-    left 25px top 770px,
-    left 40px top 822px,
-    right 124px top 1563px,
-    right 45px top 1596px,
-    right 65px top 4836px,
-    right 150px top 4884px;
+        left 25px top 770px,
+        left 40px top 822px,
+        right 124px top 1563px,
+        right 45px top 1596px,
+        right 65px top 4836px,
+        right 150px top 4884px;
 }
 
 .cart {
@@ -169,7 +169,7 @@ html {}
         background-color: white;
         border-radius: 45px;
         justify-content: space-between;
-        height: 500px;
+        min-height: 500px;
     }
 
     &__cart_left {
@@ -214,7 +214,7 @@ html {}
 }
 
 .footer {
-    height: 150px;
+    min-height: 150px;
     background-color: #BDED35;
     display: flex;
     justify-content: center;
@@ -225,3 +225,5 @@ html {}
         font-weight: 600;
     }
 }
+
+@import 'mobile';
