@@ -1,0 +1,96 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content {
+        background-image: none;
+    }
+
+
+    .hero {
+        background-image: none;
+        background-image: url(img/StarMB.png), url(img/StarM1.png), url(img/StarM2.png), url(img/StarM3.png), url(img/StarM4.png);
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px,
+            left 91px top 64px,
+            left 37px top 97px,
+            right 86px top 557px,
+            right 34px top 580px,
+        ;
+
+        &__title {
+            font-size: 40px;
+            text-align: center;
+            font-weight: 700;
+            padding-top: 147px;
+        }
+
+        &__text {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        &__buttom {
+            font-size: 16px;
+            text-align: center;
+            margin: 0px 30px 0px 30px;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .game {
+        &__title {
+            font-size: 40px;
+            font-weight: 700;
+            padding-top: 48px;
+        }
+        &__img{
+        width: 100%;
+        }
+
+        &__cart {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__cart-box {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-bottom: 10px;
+            padding-top: 48px;
+        }
+
+        &__content-name {
+            font-size: 32px;
+        }
+
+        &__content-text {
+            font-size: 16px;
+        }
+
+        &__content-buttom {
+            font-size: 16px;
+        }
+    }
+
+
+    .footer {
+        min-height: 100px;
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
