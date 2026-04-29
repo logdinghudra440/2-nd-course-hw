@@ -13,3 +13,12 @@ for (let b = 0; b <= 22; b++) {
     console.log(b);
 }
 
+const obj = {
+    "Коля" : '200$',
+    "Вася" : '300$',
+    "Петя" : '400$'
+}
+
+for (let key in obj) {
+   console.log(`${key}: ${obj[key]}`); 
+}
