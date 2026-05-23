@@ -59,3 +59,15 @@ function evenNumber(number) {
 
 console.log(evenNumber(4));
 console.log(evenNumber(5));
+
+function square(num) {
+    const result = num * num;
+    console.log(result);
+}
+square(4);
+
+function squareReturn(num) {
+    return num * num;
+}
+const result = squareReturn(5);
+console.log(result);
