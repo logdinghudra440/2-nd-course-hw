@@ -26,13 +26,13 @@ for (let key in obj) {
 let n = 1000;
 let num = 0;
 for (; n >= 50; num++) {
-  n /= 2;
+    n /= 2;
 }
 
 console.log(`Результат: ${n}`);
 console.log(`Количество итераций: ${num}`);
 
-let firstFriday = 5; 
+let firstFriday = 5;
 const totalDays = 31;
 
 for (let day = firstFriday; day <= totalDays; day += 7) {
