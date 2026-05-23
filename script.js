@@ -38,3 +38,24 @@ const totalDays = 31;
 for (let day = firstFriday; day <= totalDays; day += 7) {
     console.log(`Сегодня пятница, ${day} число. Необходимо подготовить отчет.`);
 }
+
+function minTwo(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+console.log(minTwo(8, 4));
+console.log(minTwo(6, 6));
+
+function evenNumber(number) {
+    if (number % 2 === 0) {
+        return 'Число четное';
+    } else {
+        return 'Число нечетное';
+    }
+}
+
+console.log(evenNumber(4));
+console.log(evenNumber(5));
