@@ -61,13 +61,28 @@ console.log(evenNumber(4));
 console.log(evenNumber(5));
 
 function square(num) {
-    const result = num * num;
+    const result = num ** 2;
     console.log(result);
 }
 square(4);
 
 function squareReturn(num) {
-    return num * num;
+    return num ** 2;
 }
 const result = squareReturn(5);
 console.log(result);
+
+function age() {
+    let age = +prompt('Сколько тебе лет?');
+    if (age < 0) {
+        alert('Вы ввели неправильное значение');
+    } else if (age >= 0 && age <= 12) {
+        alert('Привет, друг!')
+    } else if (age >= 13) {
+        alert('Добро пожаловать!')
+    } else {
+        alert('Вы ввели неправильное значение')
+    }
+}
+age();
+
