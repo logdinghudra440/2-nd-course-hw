@@ -86,3 +86,12 @@ function age() {
 }
 age();
 
+function calc(a,b) {
+    if (isNaN(a) && isNaN(b)) {
+        return 'Одно или оба значения не являются числом'
+    } else {
+        return a * b
+    }
+}
+console.log(calc(5,7))
+
