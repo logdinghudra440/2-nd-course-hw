@@ -104,3 +104,26 @@ function getNumber() {
     }
 }
 console.log(getNumber());
+
+function getArea() {
+    return Math.PI * this.radius **2;
+}
+
+function getPerimeter() {
+    return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+    radius: 10,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+
+const circle2 = {
+    radius: 20,
+    methodGetArea: getArea,
+    methodGetPerimeter: getPerimeter,
+}
+
+console.log(circle1.methodGetArea());
+console.log(circle2.methodGetArea());
