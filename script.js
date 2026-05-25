@@ -86,14 +86,14 @@ function age() {
 }
 age();
 
-function calc(a,b) {
-    if (isNaN(a) && isNaN(b)) {
+function calc(a, b) {
+    if (isNaN(a) || isNaN(b)) {
         return 'Одно или оба значения не являются числом'
     } else {
         return a * b
     }
 }
-console.log(calc(5,7))
+console.log(calc(5, 7))
 
 function getNumber() {
     let number = prompt('Введите число');
@@ -106,7 +106,7 @@ function getNumber() {
 console.log(getNumber());
 
 function getArea() {
-    return Math.PI * this.radius **2;
+    return Math.PI * this.radius ** 2;
 }
 
 function getPerimeter() {
