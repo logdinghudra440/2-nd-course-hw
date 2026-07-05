@@ -25,5 +25,13 @@ for (let i = 0; i < 3; i++) {
 }
 console.log(array);
 
+const numbs4 = [1, 1, 1];
+numbs4.push(2, 2, 2);
+console.log(numbs4);
 
+
+const numbs5 = [9, 8, 7, 'a', 6, 5];
+numbs5.sort();
+const numbersOnly = numbs5.filter(item => typeof item === 'number');
+console.log(numbersOnly);
 
