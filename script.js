@@ -35,3 +35,29 @@ numbs5.sort();
 const numbersOnly = numbs5.filter(item => typeof item === 'number');
 console.log(numbersOnly);
 
+
+const numbs6 = [9, 8, 7, 6, 5];
+const question = prompt("Угадай число до 10");
+if (question !== null && !isNaN(question)) {
+    const answer = parseInt(question);
+    if (numbs6.includes(answer)) {
+        alert("Угадал");
+    } else {
+        alert("Не угадал");
+    }
+} else {
+    alert("Вы ввели некорректное число!");
+}
+
+
+let text = 'abcdef';
+let textArray = text.split('');
+textArray.reverse();
+let joinedText = textArray.join('');
+console.log(joinedText);
+
+
+const arr = [[1, 2, 3], [4, 5, 6]];
+const result = [...arr[0], ...arr[1]];
+console.log(result);
+
