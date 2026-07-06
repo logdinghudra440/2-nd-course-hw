@@ -61,3 +61,15 @@ const arr = [[1, 2, 3], [4, 5, 6]];
 const result = [...arr[0], ...arr[1]];
 console.log(result);
 
+
+const numbs7 = [5, 7, 4, 8, 2];
+for (let i = 0; i < numbs7.length - 1; i++ ) {
+    const sum = numbs7[i] + numbs7[i + 1];
+    console.log(sum);
+}
+
+
+const numbs8 = [6, 3, 4, 5];
+const squareNumbs = numbs8.map(numbs8 => numbs8**2);
+console.log(squareNumbs);
+
