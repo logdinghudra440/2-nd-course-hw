@@ -78,7 +78,32 @@ const words = ['table', 'cake', 'road'];
 const wordsLength = words.map(words => words.length);
 console.log(wordsLength);
 
+
 const numbs9 = [5, -7, 8, 2, -4, -6];
 const filterNumbs = numbs9.filter(i => i < 0);
 console.log(filterNumbs);
 
+
+const array1 = [];
+
+for (let i = 0; i < 10; i++) {
+    const randomNumber = Math.random() * 10;
+    array1.push(randomNumber);
+}
+
+const filterArray = array1.filter(i => i % 2 === 0);
+
+console.log('Исходный массив:', array1);
+console.log('Массив с четными значениями:', filterArray)
+
+
+const array2 = [];
+
+for (let i = 0; i < 10; i++) {
+    const randomNumber = Math.random() * 10;
+    array2.push(randomNumber);
+}
+const sumArray = array2.reduce((total, i)=> total + i, 0);
+const resultArray = sumArray / 10;
+console.log('Исходный массив:', array2);
+console.log('Среднее арифметическое:', resultArray);
