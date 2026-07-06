@@ -73,3 +73,12 @@ const numbs8 = [6, 3, 4, 5];
 const squareNumbs = numbs8.map(numbs8 => numbs8**2);
 console.log(squareNumbs);
 
+
+const words = ['table', 'cake', 'road'];
+const wordsLength = words.map(words => words.length);
+console.log(wordsLength);
+
+const numbs9 = [5, -7, 8, 2, -4, -6];
+const filterNumbs = numbs9.filter(i => i < 0);
+console.log(filterNumbs);
+
