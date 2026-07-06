@@ -23,22 +23,22 @@ const quiz = [
      }
  ];
 
- //let correctCounter = 0;
- //for (let i = 0; i < quiz.length; i++) {
-  //const questionText = quiz[i].question + "\n" + quiz[i].options.join("\n");
-  //const userAnswer = prompt(questionText);
-  //if (userAnswer !== null && !isNaN(userAnswer)) {
-       // const answerNumber = parseInt(userAnswer);
-        //if (answerNumber === quiz[i].correctAnswer) {
-            //correctCounter++;
-            //alert("Правильно!");
-        //} else {
-            //alert("Неправильно. Правильный ответ: " + quiz[i].correctAnswer);
-        //}
-    //} else {
-       // alert("Вы ввели некорректный ответ. Пропускаем вопрос.");
-   // }
-//}
+ let correctCounter = 0;
+ for (let i = 0; i < quiz.length; i++) {
+  const questionText = quiz[i].question + "\n" + quiz[i].options.join("\n");
+  const userAnswer = prompt(questionText);
+  if (userAnswer !== null && !isNaN(userAnswer)) {
+        const answerNumber = parseInt(userAnswer);
+        if (answerNumber === quiz[i].correctAnswer) {
+            correctCounter++;
+            alert("Правильно!");
+        } else {
+            alert("Неправильно. Правильный ответ: " + quiz[i].correctAnswer);
+        }
+    } else {
+        alert("Вы ввели некорректный ответ. Пропускаем вопрос.");
+    }
+}
 
 alert(`Количество правильных ответов: ${correctCounter}`);
 
