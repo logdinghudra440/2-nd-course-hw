@@ -27,6 +27,26 @@ const quiz = [
  for (let i = 0; i < quiz.length; i++) {
   const questionText = quiz[i].question + "\n" + quiz[i].options.join("\n");
   const userAnswer = prompt(questionText);
+
+ if (userAnswer === null) {
+        alert("Игра прервана пользователем.");
+        break;
+    }
+    if (userAnswer.trim() === "") {
+        alert("Вы ничего не ввели. Игра прервана.");
+        break;
+    }
+    if (isNaN(userAnswer)) {
+        alert("Некорректный ввод. Пожалуйста, введите номер ответа.");
+        i--; 
+        continue;
+    }
+    const answerNumber = parseInt(userAnswer);
+    if (answerNumber < 1 || answerNumber > quiz[i].options.length) {
+        alert(`Некорректный номер ответа. Введите число от 1 до ${quiz[i].options.length}`);
+        i--;
+        continue;
+    }
   if (userAnswer !== null && !isNaN(userAnswer)) {
         const answerNumber = parseInt(userAnswer);
         if (answerNumber === quiz[i].correctAnswer) {
