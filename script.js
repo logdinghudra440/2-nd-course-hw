@@ -191,3 +191,73 @@ const arrayForGame = textFromUser.split("");
 const arrayInverted = arrayForGame.reverse();
 const textInverted = arrayInverted.join("");
 alert(`Смотри! Мы перевернули твой текст: ${textInverted}`);
+
+//задание 1
+let justText = 'js';
+let changeJustText = justText.toUpperCase();
+
+//задание 2
+const products = ['Конфеты Птичка','Леденцы Цитрусовые','Конфеты Суфле','Пироженое Наполеон'];
+const search = 'конфеты';
+products.forEach((product)=>{
+    if (product.toLowerCase().startsWith(search.toLowerCase())) {
+      console.log(product);
+   }
+});
+
+//задание 3
+const average = 32.58884;
+console.log(Math.floor(average));
+console.log(Math.ceil(average));
+console.log(Math.round(average));
+
+//задание 4
+const min = Math.min(52, 53, 49, 77, 21, 32);
+console.log(min);
+const max = Math.max(52, 53, 49, 77, 21, 32);
+console.log(max);
+
+//задание 5
+
+const randomNumber = (Math.floor(Math.random() * 10));
+console.log(randomNumber);
+
+//задание 6
+
+function randomArray(num){
+    const length = Math.floor(num / 2);
+    const result = [];
+       for (let i = 0; i < length; i++) {
+        result.push(Math.floor(Math.random() * (num + 1)));
+    }
+    return result; 
+}
+
+//задание 7
+
+function getRandomInRange(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+//задание 8
+
+let myDate = new Date();
+console.log(myDate);
+
+//задание 9
+
+let currentDate = new Date();
+const futureDate = new Date(currentDate);
+futureDate.setDate(futureDate.getDate() + 73);
+console.log(futureDate);
+
+//задание 10
+
+function formatDate(date) {
+    const months = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+    const days = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
+    
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} — это ${days[date.getDay()]}.\nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+}
+
+
