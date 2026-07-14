@@ -1,3 +1,4 @@
+//Игра "Простая викторина"
 const button = document.querySelector('.game__content-buttom');
 button.addEventListener('click', function () {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -61,4 +62,5 @@ for (let i = 0; i < quiz.length; i++) {
 }
 
 alert(`Количество правильных ответов: ${correctCounter}`);
+
 
