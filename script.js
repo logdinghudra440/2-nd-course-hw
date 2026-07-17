@@ -109,6 +109,7 @@ console.log('Исходный массив:', array2);
 console.log('Среднее арифметическое:', resultArray);
 
 //Игра "Угадай число"
+function playRandomNumber() {
 const randomNumberForUser = (Math.floor(Math.random() * 100) + 1);
 console.log(randomNumberForUser);
 
@@ -140,8 +141,11 @@ while (true) {
         break;
     }
 }
+}
 
 //Игра "Простая арифметика"
+
+function simpleArithmetic() {
 let correct = 0;
 let wrong = 0;
 let tasksCount = 0;
@@ -183,27 +187,33 @@ while (tasksCount < 5) {
     tasksCount++;
 }
 alert(`Игра завершена! Правильно: ${correct}, Неправильно: ${wrong}`);
+}
 
 //Игра «Переверни текст»
 
+function FlipTheText() {
 const textFromUser = prompt(`Введите любой текст`);
 const arrayForGame = textFromUser.split("");
 const arrayInverted = arrayForGame.reverse();
 const textInverted = arrayInverted.join("");
 alert(`Смотри! Мы перевернули твой текст: ${textInverted}`);
+}
 
 //задание 1
 let justText = 'js';
 let changeJustText = justText.toUpperCase();
 
 //задание 2
+
+function filterProducts(products, search) {
+    return products.filter(product => 
+        product.toLowerCase().startsWith(search.toLowerCase())
+    );
+}
 const products = ['Конфеты Птичка','Леденцы Цитрусовые','Конфеты Суфле','Пироженое Наполеон'];
 const search = 'конфеты';
-products.forEach((product)=>{
-    if (product.toLowerCase().startsWith(search.toLowerCase())) {
-      console.log(product);
-   }
-});
+const result = filterProducts(products, search);
+console.log(result);
 
 //задание 3
 const average = 32.58884;
@@ -219,8 +229,10 @@ console.log(max);
 
 //задание 5
 
-const randomNumber = (Math.floor(Math.random() * 10));
-console.log(randomNumber);
+function getRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+}
 
 //задание 6
 
@@ -232,12 +244,16 @@ function randomArray(num){
     }
     return result; 
 }
+const myArray = randomArray(10);
+console.log(myArray);
 
 //задание 7
 
 function getRandomInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+const myRandom = getRandomInRange(3, 11);
+console.log(myRandom);
 
 //задание 8
 
@@ -259,5 +275,7 @@ function formatDate(date) {
     
     return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} — это ${days[date.getDay()]}.\nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
+const now = new Date();
+console.log(formatDate(now));
 
 

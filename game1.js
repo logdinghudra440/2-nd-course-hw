@@ -1,4 +1,4 @@
-//Игра "Простая викторина"
+// Игра "Генерация случайного числа"
 const button = document.querySelector('.game__content-buttom');
 button.addEventListener('click', function () {
     const randomNumber = Math.floor(Math.random() * 100) + 1;
@@ -6,6 +6,10 @@ button.addEventListener('click', function () {
     console.log('Кнопка нажата!');
 });
 
+
+//Игра "Простая викторина"
+
+function playQuiz() {
 const quiz = [
     {
         question: "Какой цвет небо?",
@@ -62,5 +66,5 @@ for (let i = 0; i < quiz.length; i++) {
 }
 
 alert(`Количество правильных ответов: ${correctCounter}`);
-
+}
 
