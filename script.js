@@ -121,8 +121,8 @@ function filterProducts(products, search) {
 }
 const products = ['Конфеты Птичка','Леденцы Цитрусовые','Конфеты Суфле','Пироженое Наполеон'];
 const search = 'конфеты';
-const result = filterProducts(products, search);
-console.log(result);
+const result1 = filterProducts(products, search);
+console.log(result1);
 
 //задание 3
 const average = 32.58884;
@@ -187,4 +187,44 @@ function formatDate(date) {
 const now = new Date();
 console.log(formatDate(now));
 
+//задние 1
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+people.sort((a, b) => a.age - b.age);
+console.log(people);
+
+//задание 2
+
+function isPositive(num) {
+return num > 0;
+}
+function isMale(person) {
+ return person.gender === 'male';
+}
+function filter(array, ruleFunction) {
+const result = [];
+ for (let i = 0; i < array.length; i++){
+      const element = array[i];
+        if (ruleFunction(element)) {
+             result.push(element);
+        }
+    }
+     return result;
+}
+
+
+console.log(filter([3, -4, 1, 9], isPositive));
+
+const people1 = [
+   {name: 'Глеб', gender: 'male'},
+   {name: 'Анна', gender: 'female'},
+   {name: 'Олег', gender: 'male'},
+   {name: 'Оксана', gender: 'female'}
+];
+
+console.log(filter(people1, isMale));
 
