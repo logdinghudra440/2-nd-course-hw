@@ -228,3 +228,44 @@ const people1 = [
 
 console.log(filter(people1, isMale));
 
+//Задание 3
+
+function showAd() {
+    let timerId = setInterval(() => {
+        const now = new Date();
+        console.log(now);
+    }, 3000);
+    setTimeout(() => { clearInterval(timerId);console.log(`30 секунд прошло`);},30000);
+}
+showAd();
+
+//Задание 4
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
+
+//задание 5
+// Функция delayForSecond через 1 секунду пишет в консоль 
+// «Прошла одна секунда», а затем вызывает переданный колбэк
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+// Функция sayHi выводит в консоль приветствие для указанного имени
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+// Код выше менять нельзя
+
+// Нужно изменить код ниже:
+delayForSecond(function(){
+    sayHi('Глеб');
+})
