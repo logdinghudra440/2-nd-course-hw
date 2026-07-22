@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="name">Домашняя работа</h1>
+    <button class="tap">Скрыть заголовок</button>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque
+        exercitationem praesentium ullam delectus, aut assumenda numquam ea illo
+        non id saepe. Dolore possimus accusantium quod fuga a deserunt illo.</p>
+    <button class="tap2">Изменить</button>
+    <h1 class="name3">Третье задание</h1>
+    <button class="tap3">Изменить текст</button>
+    <h2 class="description">Задание 4</h2>
+    <h2 class="description">Lorem ipsum dolor sit amet</h2>
+    <h3 class="description">Lorem ipsum dolor sit amet fdgdgggg</h3>
+    <p class="text5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos?</p>
+    <p class="description2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, perferendis optio.</p>
+    <p class="text5">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="description2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt enim dolorem temporibus
+        nostrum!</p>
+    <button class="tap6">Добавить элемент</button>
+    <button class="tap7">Удалить элемент</button>
+    <script>
+        //задание 1
+        const title = document.querySelector('.name');
+        const button = document.querySelector('.tap');
+        button.addEventListener('click', function (e) {
+            if (title.style.display === 'none') {
+                title.style.display = 'block';
+                button.textContent = 'Скрыть заголовок';
+            } else {
+                title.style.display = 'none';
+                button.textContent = 'Показать заголовок';
+            }
+
+        });
+        //задание 2
+        const text = document.querySelector('.text');
+        const button2 = document.querySelector('.tap2');
+        button2.addEventListener('click', function (e) {
+            text.style.color = 'blue';
+        });
+        //задание 3
+        const title3 = document.querySelector('.name3');
+        const button3 = document.querySelector('.tap3');
+        button3.addEventListener('click', function (e) {
+            if (title3) {
+                title3.textContent = 'Привет, мир!';
+            }
+        });
+        //задание 4
+        const paragraphs = document.querySelectorAll('.description');
+        paragraphs.forEach(element => {
+            element.textContent = 'Измененный текст';
+        });
+        //задание 5
+        const paragraphs2 = document.querySelectorAll('.description2');
+        paragraphs2.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+        //задание 6
+        const button6 = document.querySelector('.tap6');
+        button6.addEventListener('click', function (e) {
+            const newP = document.createElement('p');
+            newP.textContent = 'Новый абзац';
+            document.body.appendChild(newP);
+        });
+        //задание 7
+        const description = document.querySelector('.description');
+        const button7 = document.querySelector('.tap7');
+        button7.addEventListener('click', function (e) {
+            description.remove();
+        });
+
+
+
+    </script>
+</body>
+
+</html>
