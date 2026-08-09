@@ -55,6 +55,34 @@ button {
   transition: all 0.7s;
 }
 
+.scroll {
+  background-color: #BCEC30;
+  overflow: hidden;
+  width: 100%;
+}
+.scroll__content {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 51px;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.scroll__text {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .content {
   background-color: #202027;
   background-image: url(img/Star1Con.png), url(img/Star2Con.png), url(img/Star3Con.png), url(img/Star4Con.png), url(img/Star5Con.png), url(img/Star6Con.png), url(img/Star7Con.png);
