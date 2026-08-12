@@ -196,3 +196,18 @@ function rockPaperScissors() {
     alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n\n${result}`);
 }
 rockPaperScissors();
+
+//Игра "Генерация случайного цвета"
+function randomColor() {
+const symbols = '0123456789ABCDEF';
+let color = '#';
+for (let i = 0; i < 6; i++) {
+    const randomIndex = Math.floor(Math.random() * symbols.length);
+    color = color + symbols[randomIndex];
+}
+return color;
+}
+ document.getElementById('buttonClik').onclick = function() {
+            document.body.style.background = randomColor();
+        };
+    

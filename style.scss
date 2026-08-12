@@ -53,13 +53,12 @@ button {
         font-weight: 600;
         border-radius: 60px;
         padding: 16px 65px 16px 65px;
-        border: none;
+        border: 1px solid #202027;
         text-decoration: none;
         text-align: center;
     }
 
     &__buttom:hover {
-        border: 1px solid #202027;
         background-color: transparent;
         color: #202027;
         transition: all 0.7s;
@@ -235,11 +234,10 @@ button {
         font-weight: 600;
         border-radius: 60px;
         padding: 16px 75px 16px 75px;
-        border: none;
+        border: 1px solid #202027;
     }
 
     &__content-buttom:hover {
-        border: 1px solid #202027;
         background-color: transparent;
         color: #202027;
         transition: all 0.7s;

@@ -44,12 +44,11 @@ button {
   font-weight: 600;
   border-radius: 60px;
   padding: 16px 65px 16px 65px;
-  border: none;
+  border: 1px solid #202027;
   text-decoration: none;
   text-align: center;
 }
 .hero__buttom:hover {
-  border: 1px solid #202027;
   background-color: transparent;
   color: #202027;
   transition: all 0.7s;
@@ -192,10 +191,9 @@ button {
   font-weight: 600;
   border-radius: 60px;
   padding: 16px 75px 16px 75px;
-  border: none;
+  border: 1px solid #202027;
 }
 .game__content-buttom:hover {
-  border: 1px solid #202027;
   background-color: transparent;
   color: #202027;
   transition: all 0.7s;
@@ -247,6 +245,14 @@ button {
     justify-content: center;
     flex-direction: column;
   }
+  .scroll__content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+  .scroll__text {
+    font-size: 30px;
+  }
   .cart {
     display: none;
   }
@@ -269,6 +275,14 @@ button {
     padding-bottom: 10px;
     padding-top: 48px;
   }
+  .game__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game__img {
+    order: -1;
+  }
   .game__content-name {
     font-size: 32px;
   }
@@ -277,6 +291,7 @@ button {
   }
   .game__content-buttom {
     font-size: 16px;
+    width: 100%;
   }
   .footer {
     min-height: 100px;
