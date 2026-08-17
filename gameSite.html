@@ -11,9 +11,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<body>
 <header class="hero">
-  
+
     <div class="hero__content center">
         <h1 class="hero__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
         <p class="hero__text">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай
@@ -21,8 +21,25 @@
             <strong>приступай.</strong>
         </p>
         <a href="#allgames" class="hero__buttom">Поехали!</a>
+
     </div>
 </header>
+<div class="scroll"> 
+  <div class="scroll__content">
+      <span class="scroll__text">Викторина</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+      <span class="scroll__text">Угадай число</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+      <span class="scroll__text">Переверни текст</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+      <span class="scroll__text">Простая арифметика</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+      <span class="scroll__text">Камень, ножницы, бумага</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+      <span class="scroll__text">Генератор случайных цветов</span>
+      <span><img src="img/blackStar.png" alt="звездочка"></span>
+  </div>
+</div>
 <div class="content">
     <section class="cart center" id="allgames">
         <h1 class="cart__title">Об играх</h1>
@@ -80,7 +97,7 @@
                 <div class="game__content">
                     <h2 class="game__content-name">Угадай число</h2>
                     <p class="game__content-text">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" onclick="playRandomNumber()">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart1.png" alt="">
             </div>
@@ -88,7 +105,7 @@
                 <div class="game__content">
                     <h2 class="game__content-name">Простая арифметика</h2>
                     <p class="game__content-text">Попробуй решить простые арифметические задачи.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" onclick="simpleArithmetic()">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart2.png" alt="">
             </div>
@@ -96,7 +113,7 @@
                 <div class="game__content">
                     <h2 class="game__content-name">Переверни текст</h2>
                     <p class="game__content-text">Попробуй ввести текст, который будет перевернут.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" onclick="FlipTheText()">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart3.png" alt="">
             </div>
@@ -104,7 +121,7 @@
                 <div class="game__content">
                     <h2 class="game__content-name">Камень, ножницы, бумага</h2>
                     <p class="game__content-text">Сыграй в популярную игру против компьютера.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" onclick="rockPaperScissors()">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart4.png" alt="">
             </div>
@@ -112,7 +129,7 @@
                 <div class="game__content">
                     <h2 class="game__content-name">Простая викторина</h2>
                     <p class="game__content-text">Отвечай на вопросы викторины с вариантами ответов.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" onclick="playQuiz()">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart5.png" alt="">
             </div>
@@ -121,7 +138,7 @@
                     <h2 class="game__content-name">Генератор случайных цветов</h2>
                     <p class="game__content-text">Игра, в которой при клике на кнопку фон страницы меняется на
                         случайный.</p>
-                    <button class="game__content-buttom">Играть!</button>
+                    <button class="game__content-buttom" id="buttonClik">Играть!</button>
                 </div>
                 <img class="game__img" src="./img/cart6.png" alt="">
             </div>
@@ -131,6 +148,7 @@
 <footer class="footer">
     <p class="footer__text">Все права защищены.</p>
 </footer>
+<script src="games.js"></script>
 </body>
 
 </html>

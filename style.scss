@@ -14,8 +14,6 @@ button {
     font-family: 'Montserrat', arial;
 }
 
-html {}
-
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -49,20 +47,18 @@ html {}
     }
 
     &__buttom {
-        display: block;
         background-color: #202027;
         color: white;
         font-size: 24px;
         font-weight: 600;
         border-radius: 60px;
         padding: 16px 65px 16px 65px;
-        border: none;
+        border: 1px solid #202027;
         text-decoration: none;
-        width: 247px;
+        text-align: center;
     }
 
     &__buttom:hover {
-        border: 1px solid #202027;
         background-color: transparent;
         color: #202027;
         transition: all 0.7s;
@@ -70,17 +66,49 @@ html {}
 
 }
 
+.scroll {
+    background-color: #BCEC30;
+    overflow: hidden;
+    width: 100%;
+
+    &__content {
+        padding-top: 27px;
+        padding-bottom: 27px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 51px;
+        animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    &__text {
+        font-size: 30px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+}
+
 .content {
     background-color: #202027;
     background-image: url(img/Star1Con.png), url(img/Star2Con.png), url(img/Star3Con.png), url(img/Star4Con.png), url(img/Star5Con.png), url(img/Star6Con.png), url(img/Star7Con.png);
     background-repeat: no-repeat;
     background-position: top 77px right 0px,
-    left 25px top 770px,
-    left 40px top 822px,
-    right 124px top 1563px,
-    right 45px top 1596px,
-    right 65px top 4836px,
-    right 150px top 4884px;
+        left 25px top 770px,
+        left 40px top 822px,
+        right 124px top 1563px,
+        right 45px top 1596px,
+        right 65px top 4836px,
+        right 150px top 4884px;
 }
 
 .cart {
@@ -156,6 +184,10 @@ html {}
         padding-top: 94px;
     }
 
+    &__img {
+        width: 60%;
+    }
+
     &__cart-box {
         display: flex;
         flex-direction: column;
@@ -169,7 +201,7 @@ html {}
         background-color: white;
         border-radius: 45px;
         justify-content: space-between;
-        height: 500px;
+        min-height: 500px;
     }
 
     &__cart_left {
@@ -202,11 +234,10 @@ html {}
         font-weight: 600;
         border-radius: 60px;
         padding: 16px 75px 16px 75px;
-        border: none;
+        border: 1px solid #202027;
     }
 
     &__content-buttom:hover {
-        border: 1px solid #202027;
         background-color: transparent;
         color: #202027;
         transition: all 0.7s;
@@ -214,7 +245,7 @@ html {}
 }
 
 .footer {
-    height: 150px;
+    min-height: 150px;
     background-color: #BDED35;
     display: flex;
     justify-content: center;
@@ -225,3 +256,5 @@ html {}
         font-weight: 600;
     }
 }
+
+@import 'mobile';
